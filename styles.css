@@ -372,24 +372,36 @@ body, html {
 
 @media (max-width: 768px) {
     html {
-        font-size: 12px;
-      }
+        font-size: 14px;
+    }
+
     #couple {
         background-attachment: scroll;
     }
+
     .main {
         margin-left: none;
     }
+
+    .daelogo {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 150px;
+    }
+
     .toggle-btn {
         display: block;
     }
+
     .panel {
         transform: translateX(-100%);
     }
+
     #clock, #text {
         width: 80%;
         margin-left: 10%;
     }
+
     #amira {
         display: flex;
         flex-direction: column;
@@ -397,9 +409,11 @@ body, html {
         justify-content: space-between;
         align-items: center;
     }
+
     #amira-logo {
         width: 70%;
     }
+
     .gift-tiles {
         display: flex;
         flex-direction: column;
@@ -408,8 +422,21 @@ body, html {
         width: 90%;
         margin-left: 5%;
     }
+
     .gift-category {
         margin-top: 10px;
+    }
+
+    .icon {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #amira-details {
+        width: 90%;
     }
 }
 
@@ -426,13 +453,22 @@ body, html {
     .main {
         margin-left: 25%;
     }
+
+    .daelogo {
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 150px;
+    }
+
     .toggle-btn {
         display: none;
     }
+
     #clock, #text {
         width: 50%;
         margin-left: 25%;
     }
+
     #amira {
         display: flex;
         flex-direction: row;
@@ -440,9 +476,11 @@ body, html {
         align-items: center;
         margin-left: 5%;
     }
+
     #amira-logo {
         width: 40%;
     }
+
     .gift-tiles {
         display: flex;
         flex-direction: row;
@@ -451,8 +489,20 @@ body, html {
         width: 90%;
         margin-left: 5%;
     }
+
     .gift-category {
         flex: 1;
+    }
+
+    #amira-details {
+        width: 55%;
+    }
+
+    .icon {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
     }
 }
 
@@ -469,13 +519,22 @@ body, html {
     .main {
         margin-left: 20%;
     }
+
+    .daelogo {
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 100px;
+    }
+
     .toggle-btn {
         display: none;
     }
+
     #clock, #text {
         width: 50%;
         margin-left: 25%;
     }
+
     #amira {
         display: flex;
         flex-direction: row;
@@ -483,9 +542,11 @@ body, html {
         align-items: center;
         margin-left: 5%;
     }
+
     #amira-logo {
         width: 40%;
     }
+
     .gift-tiles {
         display: flex;
         flex-direction: row;
@@ -494,8 +555,20 @@ body, html {
         width: 90%;
         margin-left: 5%;
     }
+
     .gift-category {
         flex: 1;
+    }
+
+    #amira-details {
+        width: 55%;
+    }
+
+    .icon {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
     }
 }
 
@@ -508,6 +581,16 @@ body, html {
     position: fixed;
     transition: transform 0.3s ease;
     z-index: 1000;
+}
+
+.panel-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.panel-logo {
+    max-width: 80%;
 }
 
 .panel.closed {
@@ -532,7 +615,7 @@ body, html {
     border-radius: 5px;
 }
 
-.panel img {
+#dahon {
     align-items: center;
     max-width: 30%;
 }
@@ -567,16 +650,6 @@ a {
     flex-direction: column;
 }
 
-h1 {
-    margin-top: 10%;
-    margin-bottom: 0;
-}
-
-#home p {
-    margin-top: 0;
-    letter-spacing: 2px;
-}
-
 #couple {
     background-image: url(./Images/couple-img.png);
     background-attachment: fixed;
@@ -587,6 +660,8 @@ h1 {
 
 .couple {
     background-color: #fff6d6;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .couple-names {
@@ -598,8 +673,7 @@ h1 {
 .couple-tile {
     width: 43%;
     background-color: whitesmoke;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .shain-tile {
@@ -608,6 +682,16 @@ h1 {
 
 .dos-tile {
     margin-left: 4%;
+}
+
+#couple-story {
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: whitesmoke;
+}
+
+#couple-story p {
+    padding: 2rem 5%;
 }
 
 #countdown, #countdown-heading {
@@ -659,21 +743,16 @@ h1 {
     margin-top: 0;
 }
 
-#luna-dae {
+.luna-dae {
     display: flex;
     flex-direction: row;
+    flex: 1;
+    align-items: center;
 }
 
-.luna-dae {
-    width: 43%;
-}
-
-#luna {
+.friend-tile {
+    width: 42.5%;
     margin-left: 5%;
-}
-
-#dae {
-    margin-left: 4%;
 }
 
 #see-you {
@@ -695,13 +774,16 @@ h1 {
     background-color: #fff6d6;
 }
 
+#when-where a, #faq a {
+    text-decoration: underline;
+}
+
 #amira-pic {
     width: 100%;
 }
 
-#amira-details {
-    width: 55%;
-
+.icon img {
+    padding-right: 5px;
 }
 
 #dress-code p {
@@ -742,3 +824,17 @@ h1 {
     font-weight: 700;
 }
 
+#faq p {
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+    font-family: "Nunito Sans", serif;
+}
+
+#faq h4 {
+    margin-left: 5%;
+    margin-bottom: 10px;
+    font-family: "Nunito Sans", serif;
+    font-weight: 700;
+}
