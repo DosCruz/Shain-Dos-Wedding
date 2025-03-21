@@ -26,6 +26,7 @@ const targetDate = new Date("June 21, 2025 14:00:00").getTime();
 
 const toggleBtn = document.getElementById('toggleBtn');
 const panel = document.querySelector('.panel');
+const sectionLinks = document.querySelectorAll('.button');
 
 toggleBtn.addEventListener('click', () => {
   if (panel.classList.contains('open')) {
@@ -35,4 +36,11 @@ toggleBtn.addEventListener('click', () => {
     panel.classList.remove('closed');
     panel.classList.add('open');
   }
+});
+
+sectionLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    panel.classList.remove('open');
+    panel.classList.add('closed');
+  });
 });
