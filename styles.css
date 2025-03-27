@@ -375,8 +375,13 @@ body, html {
         font-size: 14px;
     }
 
+    #home {
+        background-image: url(./Images/home-img-mobile.png);
+    }
+
     #couple {
         background-attachment: scroll;
+        background-image: url(./Images/couple-img.png);
     }
 
     .main {
@@ -386,7 +391,8 @@ body, html {
     .daelogo {
         margin-left: 15%;
         margin-right: 15%;
-        margin-top: 150px;
+        margin-top: 450px;
+        filter: invert(100%);
     }
 
     .toggle-btn {
@@ -395,6 +401,14 @@ body, html {
 
     .panel {
         transform: translateX(-100%);
+    }
+
+    .luna-dae img {
+        max-width: 150px;
+    }
+
+    #see-you {
+        background-image: url(./Images/friends-img.png);
     }
 
     #clock, #text {
@@ -445,6 +459,10 @@ body, html {
       font-size: 14px;
     }
 
+    #home {
+        background-image: url(./Images/home-img.png);
+    }
+
     .panel {
         transform: translateX(0);
         width: 25%;
@@ -457,11 +475,24 @@ body, html {
     .daelogo {
         margin-left: 20%;
         margin-right: 20%;
-        margin-top: 150px;
+        margin-top: 450px;
+        filter: invert(100%);
     }
 
     .toggle-btn {
         display: none;
+    }
+
+    #couple {
+        background-image: url(./Images/couple-img-25.png);
+    }
+
+    #see-you {
+        background-image: url(./Images/friends-img-25.png);
+    }
+
+    .luna-dae img {
+        max-width: 200px;
     }
 
     #clock, #text {
@@ -511,6 +542,10 @@ body, html {
       font-size: 18px;
     }
 
+    #home {
+        background-image: url(./Images/home-img.png);
+    }
+
     .panel {
         transform: translateX(0);
         width: 20%;
@@ -523,11 +558,24 @@ body, html {
     .daelogo {
         margin-left: 25%;
         margin-right: 25%;
-        margin-top: 100px;
+        margin-top: 450px;
+        filter: invert(100%);
     }
 
     .toggle-btn {
         display: none;
+    }
+
+    #couple {
+        background-image: url(./Images/couple-img-20.png);
+    }
+
+    .luna-dae img {
+        max-width: 200px;
+    }
+
+    #see-you {
+        background-image: url(./Images/friends-img-20.png);
     }
 
     #clock, #text {
@@ -576,7 +624,7 @@ body, html {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #e6b775;
+    background-color: #4B0082;
     text-align: center;
     position: fixed;
     transition: transform 0.3s ease;
@@ -587,10 +635,12 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
 }
 
 .panel-logo {
     max-width: 80%;
+    filter: invert(100%);
 }
 
 .panel.closed {
@@ -606,7 +656,7 @@ body, html {
     top: 1rem;
     left: 1rem;
     z-index: 1100;
-    background-color: #e6b775;
+    background-color: #4B0082;
     color: #fff;
     border: none;
     font-size: 1.5rem;
@@ -618,11 +668,13 @@ body, html {
 #dahon {
     align-items: center;
     max-width: 30%;
+    filter: invert(100%);
 }
 
 .panel-mid ul {
     list-style: none;
     padding-left: 0;
+    color: white;
 }
 
 a {
@@ -633,6 +685,7 @@ a {
 
 .panel-bottom {
     margin-top: auto;
+    color: white;
 }
 
 .separate {
@@ -641,7 +694,6 @@ a {
 }
 
 #home {
-    background-image: url(./Images/home-img.png);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -651,7 +703,6 @@ a {
 }
 
 #couple {
-    background-image: url(./Images/couple-img.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -659,7 +710,7 @@ a {
 }
 
 .couple {
-    background-color: #fff6d6;
+    background-color: #B799E6;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
@@ -667,13 +718,17 @@ a {
 .couple-names {
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 100%;
 }
 
 .couple-tile {
     width: 43%;
-    background-color: whitesmoke;
-    margin-bottom: 2rem;
+    background-color: #B799E6;
+}
+
+.couple-tile h3 {
+    font-weight: 500;
 }
 
 .shain-tile {
@@ -687,11 +742,7 @@ a {
 #couple-story {
     margin-left: 5%;
     margin-right: 5%;
-    background-color: whitesmoke;
-}
-
-#couple-story p {
-    padding: 2rem 5%;
+    background-color: #B799E6;
 }
 
 #countdown, #countdown-heading {
@@ -725,7 +776,7 @@ a {
 }
 
 #friends {
-    background-color: #fff6d6;
+    background-color: #B799E6;
 }
 
 .section-header {
@@ -743,11 +794,25 @@ a {
     margin-top: 0;
 }
 
+#luna-dae {
+    text-align: center;
+}
+
 .luna-dae {
     display: flex;
     flex-direction: row;
     flex: 1;
     align-items: center;
+}
+
+.luna-dae-pic {
+    width: 42.5%;
+    margin-left: 5%;
+}
+
+.luna-dae img {
+    border-radius: 50%;
+    margin-top: 40px;
 }
 
 .friend-tile {
@@ -756,7 +821,6 @@ a {
 }
 
 #see-you {
-    background-image: url(./Images/friends-img.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -771,7 +835,7 @@ a {
 }
 
 #when-where {
-    background-color: #fff6d6;
+    background-color: #B799E6;
 }
 
 #when-where a, #faq a {
@@ -784,6 +848,10 @@ a {
 
 .icon img {
     padding-right: 5px;
+}
+
+#dress-code {
+    background-color: #D4BFF2;
 }
 
 #dress-code p {
@@ -806,11 +874,12 @@ a {
     flex-wrap: wrap;
     margin-left: 10%;
     margin-right: 10%;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 25px;
 }
 
 #gift-registry {
-    background-color: #fff6d6;
+    background-color: #B799E6;
 }
 
 .gift-category ul {
@@ -822,6 +891,10 @@ a {
 .gift-category p {
     font-family: "Nunito Sans", serif;
     font-weight: 700;
+}
+
+#faq {
+    background-color: #D4BFF2;
 }
 
 #faq p {

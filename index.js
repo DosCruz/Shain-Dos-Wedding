@@ -40,7 +40,9 @@ toggleBtn.addEventListener('click', () => {
 
 sectionLinks.forEach(link => {
   link.addEventListener('click', () => {
-    panel.classList.remove('open');
-    panel.classList.add('closed');
+    if (window.innerWidth < 768) {
+      panel.classList.remove('open');
+      panel.classList.add('closed');
+    }
   });
 });
