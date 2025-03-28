@@ -624,6 +624,12 @@ body, html {
     #see-you {
         background-attachment: scroll !important;
     }
+    #couple {
+        background-attachment: scroll !important;
+    }
+    #see-you-heading {
+        margin-top: 100px;
+    }
 }
 
 .panel {
