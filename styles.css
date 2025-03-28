@@ -704,7 +704,7 @@ a {
 
 #couple {
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100% auto;
     background-position: center;
     text-align: center;
 }
@@ -822,7 +822,7 @@ a {
 
 #see-you {
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100% auto;
     background-position: center;
     text-align: center;
 }
