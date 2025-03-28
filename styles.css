@@ -620,6 +620,12 @@ body, html {
     }
 }
 
+@supports (-webkit-touch-callout: none) {
+    #see-you {
+        background-attachment: scroll !important;
+    }
+}
+
 .panel {
     height: 100vh;
     display: flex;
@@ -704,7 +710,7 @@ a {
 
 #couple {
     background-attachment: fixed;
-    background-size: 100% auto;
+    background-size: cover;
     background-position: center;
     text-align: center;
 }
@@ -822,7 +828,7 @@ a {
 
 #see-you {
     background-attachment: fixed;
-    background-size: 100% auto;
+    background-size: cover;
     background-position: center;
     text-align: center;
 }
