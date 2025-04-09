@@ -851,7 +851,7 @@ a {
     background-color: #B799E6;
 }
 
-#when-where a, #faq a {
+#when-where a, #faq a, #rsvp a {
     text-decoration: underline;
 }
 
@@ -923,4 +923,8 @@ a {
     margin-bottom: 10px;
     font-family: "Nunito Sans", serif;
     font-weight: 700;
+}
+
+#rsvp {
+    background-color: #B799E6;
 }
